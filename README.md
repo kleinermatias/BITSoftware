@@ -1,9 +1,9 @@
-# BITSoftware - Trabajo Final
+﻿# BITSoftware - Trabajo Final
 
 Trabajo final para Ingeniería en Software - UNC
 
 ### INTEGRANTES ###
 
- Cavanagh Juan Francisco ()
+ Cavanagh Juan Francisco (38107771)
  Kleiner Matias (37590431)
  Casabella Martin ()
