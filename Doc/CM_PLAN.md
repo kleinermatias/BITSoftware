@@ -16,6 +16,9 @@ proyecto.
 - Controlar que ninguno de estos cambios se pierda.
 - Proveer criterios y direcciónes necesarias para el desempeño del proceso de 
 administración de la configuración.
+- Decidir si es conveniente o no implementar un cambio solicitado.
+- Especificar roles de cada participante del proyecto.
+- Definir cómo se realizará el backup del proyecto.
 
 #### 1.2 Glosario ####
  
@@ -29,8 +32,9 @@ servidor. Puede ser un sistema de archivos en un disco duro, un banco de datos, 
 pertenecen a un proyecto común.
 
 
-**Revisión ("version"):** Una revisión es una versión determinada de un      archivo.
+**Revisión ("version"):** Una revisión es una versión determinada de un archivo.
 
+**Release:** Lanzamiento del producto, puesta en venta.
 
 **Cambio**: Representa una modificación específica a un documento bajo control de versiones. 
 
@@ -38,6 +42,9 @@ pertenecen a un proyecto común.
 de evaluar y aprobar determinados cambios propuestos sobre un ítem de configuración.
 Además verifican la implementación de los cambios aprobados.
 
+**Build:** Generar compilar o y/o ejecutar un sistema.
+
+**Commit:** Comentario que describe brevemente los cambios realizados en el repositorio.
 
 **Línea Base:** Conjunto de productos de trabajo que han sido revisados y aprobados, y que
 serán utilizados luego como base para la realización de cambios. Dichos cambios solo
@@ -82,7 +89,7 @@ Los pasos necesarios para realizar una petición de cambio son:
 3. Proponer ciertos plazos para su implementacion
 4. Establecer un titulo al cambio requerido
 5. Realizar una breve "experiencia de usuario" sobre el requisito planteado
-<br>
+
 Una vez cumplidos los pasos descriptos anteriormente, se presentará al Administrador de Vesiones, quien someterá dicha peticion al proceso de cambio correspondiente (S 3.3)
 
 #### 3.2 Comité de Control de Cambios (CCC)  ####
@@ -116,32 +123,27 @@ Una vez presentada la propuesta de cambio, cumpliendo lo establecido en el punto
 2. Identificar las áreas afectadas por el cambio requerido.
 3. Detallar costos estimados, fechas de apropacion y estimacion de la implementacion.
 4. Convocar al la CCC para el analisis economico y evaluacion integro del cambio requerido.
-5. Si es aceptado por CCC, se promueva al desarrollo del cambio a traves de un documento escrito para los desarrolladores.
-6. Si no es aceptado por CCC, se pruemueve el cambio al archivo de requerimentos pendientes.  
+5. Si es aceptado por CCC, se lleva a cabo el desarrollo del cambio a traves de un documento escrito para los desarrolladores.
+6. Si no es aceptado por CCC, se promueve el cambio al archivo de requerimentos pendientes.  
 
 ### 4. Normas de nombramiento de archivos ###
 El proyecto será guardado bajo el directorio <BITSoftware> (repositorio de github).
  
 En ella se encuentran las siguientes subcarpetas:
 
-
 - *src:* guarda el contenido de la aplicacion (codigo fuente) y los test unitarios
 - *doc:* guarda datos importantes del proyecto: plan de configuracion, diagramas (en subdirectorios "DiagramasUML"), archivo de requerimientos y  subdirectorio **ejecutables** (con el archivo .zip de los ejecutables del software)
 - *gradle:* guarda la configuracion del builder.
 - *config:* guarda el checkstyle del proyecto
 - *bin:* guarda documentos compilados del proyecto
+- *cambios:* Contiene tres subdirectorios que son CambiosDescartados, CambiosPendientes, CambiosAprobados
 
-Ademas esta carpeta contiene archivos para el uso de integracion continua, archivos de txt, etc:
-</br>
-travis.yml </br>
-README.md </br>
-build </br>
-settings</br>
+
 
 A continuacion se muestra una imagen de la organizacion del Directorio:
 ![Organizacion del Repositorio]()
 
-### 5 Equipos en ProyectoFinal ###
+### 5 Equipos en BITSoftware ###
 **Equipos Scrum:** encargados de desarrollar nuevas funcionalidades de forma ágil y rápida.
 Actualizan el código frecuentemente, evitando problemas a la hora de unir las partes
 desarrolladas por cada uno. Tambien pueden estar encargados de corregir bugs en el
@@ -186,6 +188,7 @@ deberán ser respetadas las reglas que aquí se establecen para el nombramiento 
 etiqueta. 
 Las etiquetas estarán denominadas de la siguiente forma:
 
+**N1.N2.N3**
 - **Primer dígito (N1):** Este release indicará un gran cambio en la funcionalidad del
 proyecto agregando al menos dos características nuevas. Cada uno de estos
 releases deberá contar con autorización de un miembro de un mayor escalón
@@ -238,7 +241,11 @@ Informalmente también los desarrolladores realizaran builds a nivel local para 
 que las funcionalidades nuevas que están aplicando son correctas, estos no se enviarán al
 repositorio, sino que sólo estarán disponibles en el ordenador de desarrollador.
 
-### 8 Backup ###
+### 8. Administraciòn de Release ###
+
+se realizarán compilaciones y construcciones de sistemas sobre la rama de lanzamiento (Master o de integración), teniendo en cuenta el cliente del cual se trata (la rama puede variar dependiendo el cliente). A medida que se van realizando los distintos tests con un desarrollo incremental iterativo, se irán corrigiendo los diferentes defectos y errores que van surgiendo. Cabe destacar que se deberán identificar correctamente las construcciones de los sistemas para cada ciclo. El producto, una vez que pasa todas las pruebas a las cuales se lo somete y que estarán efectuadas de acuerdo al Documento de Requerimientos, será otorgado al cliente.
+
+### 9. Backup ###
 El código fuente del proyecto se encontrara alojado en los servidores de GitHub pero
 también existirá una versión de backup en un ordenador del proyecto, el cual copiará el
 proyecto de GitHub a diario para evitar que algún problema en el servidor afecte al correcto
