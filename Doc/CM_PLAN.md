@@ -3,6 +3,7 @@
 - Control de Versiones
 	- **Version 0.1** -  Autor: Kleiner Matias - Fecha: 03/04/2017 - Descripcion: primera version del documento
 	- **Version 0.1.1** -  Autor: cavanagh Juan - Fecha: 06/05/2017 - Descripcion: corrección de ortografia e incorporación de secciones.
+	- **Version 0.1.2** -  Autor: cavanagh Juan - Fecha: 06/05/2017 - Descripcion: Imagenes de esquemas de ramas y directorios agregadas.
 
 ### 1. Introducción  ###
 Este documento describe el plan de administración de la configuración para el proyecto final de la materia Ingeniería de Software. El proceso de Administración de la Configuración  asegura el control  de
@@ -142,7 +143,7 @@ En ella se encuentran las siguientes subcarpetas:
 
 
 A continuacion se muestra una imagen de la organizacion del Directorio:
-![Organizacion del Repositorio]()
+![Organizacion del Repositorio](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/OrganizacionDirectorio.png)
 
 ### 5 Equipos en BITSoftware ###
 **Equipos Scrum:** encargados de desarrollar nuevas funcionalidades de forma ágil y rápida.
@@ -180,7 +181,7 @@ En esta sección se describen distintos ítems de configuración. Se tiene en cu
 - **Rama de Modificacion:** Este tipo de rama será utilizada para realizar modificaciones en los documentos asociados al proyecto, tales como requerimientos, diagramas, datos historicos e incluso el plan de configuraciones. La identificaion de la rama deberá corresponder al documento en cuestion. (Ej: branch Requerimientos; donde el archivo a modificar corresponde a los requerimientos del sistema).
 
 A continuacion se muestra una imagen con el esquemda de ramas a seguir:
-![Esquema de Ramas]()
+![Esquema de Ramas](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/OrganizacionRamas.png)
 
 #### 6.2 Definición de etiquetas ####
 Se etiquetará un commit sólo si su código cuenta con correcta sintaxis y el codigo funcione correctamente. El etiquetado debe ser
