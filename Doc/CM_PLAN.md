@@ -2,8 +2,8 @@
 
 - Control de Versiones
 	- **Version 0.1** -  Autor: Kleiner Matias - Fecha: 03/04/2017 - Descripcion: primera version del documento
-	- **Version 0.1.1** -  Autor: cavanagh Juan - Fecha: 06/05/2017 - Descripcion: corrección de ortografia e incorporación de secciones.
-	- **Version 0.1.2** -  Autor: cavanagh Juan - Fecha: 06/05/2017 - Descripcion: Imagenes de esquemas de ramas y directorios agregadas.
+	- **Version 0.1.1** -  Autor: Cavanagh Juan - Fecha: 06/05/2017 - Descripcion: corrección de ortografia e incorporación de secciones.
+	- **Version 0.1.2** -  Autor: Kleiner Matias - Fecha: 06/05/2017 - Descripcion: Imagenes de esquemas de ramas y directorios agregadas.
 
 ### 1. Introducción  ###
 Este documento describe el plan de administración de la configuración para el proyecto final de la materia Ingeniería de Software. El proceso de Administración de la Configuración  asegura el control  de
