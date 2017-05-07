@@ -1,4 +1,4 @@
-#Manual de la aplicación Bitiket#
+# Manual de la aplicación Bitiket #
 ### 1 INTRODUCCIÓN ###
 Este manual proporciona los detalles y requerimientos para el uso de la aplicación móvil
 conocida como Bitiket. La aplicación fue diseñada para la venta de pasajes, de manera facil y eficiente.
@@ -44,4 +44,4 @@ se asegura que la solución se ejecutará con total normalidad, seguridad, efici
 
 
 
-### 5 CONSIDERACIONES FINALES###
+### 5 CONSIDERACIONES FINALES ###
