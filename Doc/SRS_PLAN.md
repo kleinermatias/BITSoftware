@@ -60,6 +60,9 @@ Breve descripcion de los casos de uso
 ![CU6](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU6.png)
 ![CU7](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU7.png)
 
+A continuacion, se muestra un diagrama de secuencia de uso de la aplicacion
+![Diagrama de secuencia](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/Sequence%20Diagram1.jpg)
+
 #### 3.1 Servicios provistos al cliente ####
 La aplicacion deberá ser capaz de ofrecer al interesado en adquirir un boleto de viaje en colectivo de la empresa XXXXX la posibilidad de eleccion de la fecha de su viaje, el origen y destino del mismo, el horario conveniente, el/los numero/s de asiento/s, la forma de pago y la verificacion del mismo.
 
