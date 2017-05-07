@@ -1,9 +1,10 @@
 # Plan de administracion de configuraciones #
 
 - Control de Versiones
-	- **Version 0.1** -  Autor: Kleiner Matias - Fecha: 03/04/2017 - Descripcion: primera version del documento
+	- **Version 0.1.0** -  Autor: Kleiner Matias - Fecha: 03/04/2017 - Descripcion: primera version del documento
 	- **Version 0.1.1** -  Autor: Cavanagh Juan - Fecha: 06/05/2017 - Descripcion: corrección de ortografia e incorporación de secciones.
 	- **Version 0.1.2** -  Autor: Kleiner Matias - Fecha: 06/05/2017 - Descripcion: Imagenes de esquemas de ramas y directorios agregadas.
+	- **Version 0.2.0** -  Autor: Cavanagh Juan - Fecha: 07/05/2017 - Descripcion: modificación de la sección administración de Release, corrección de errores en diferentes secciones.
 
 ### 1. Introducción  ###
 Este documento describe el plan de administración de la configuración para el proyecto final de la materia Ingeniería de Software. El proceso de Administración de la Configuración  asegura el control  de
@@ -243,9 +244,30 @@ Informalmente también los desarrolladores realizaran builds a nivel local para 
 que las funcionalidades nuevas que están aplicando son correctas, estos no se enviarán al
 repositorio, sino que sólo estarán disponibles en el ordenador de desarrollador.
 
-### 8. Administraciòn de Release ###
+### 8. Administración de Release ###
+Se realizara un proceso para gestionar una nueva entrega o actualización de software. 
+#### 8.1 Información y descripción ####
+Se reúnen las nuevas exigencias, es decir la cumplimentación de todos los requerimientos. Se fijan pasos necesarios para la entrega, plazos límites, etc.
+#### 8.2 Release building ####
+Una vez conocidos los requerimientos, dependencias y plazos, se comienza la construcción de la nueva entrega. Con todo lo que esto implica (diseño, codificación, cada parte de código, clase e ítem de configuración será compilado enlazado y armado en un ejecutable. Luego se realiza un tag en el repositorio para marcar la versión utilizada.
+#### 8.3 Pruebas de aceptación #### 
+Luego la build deberá pasar la prueba de aceptación, es decir que cumpla con requerimientos y que funcione correctamente para ser entregada al cliente.
+#### 8.4 Preparación de entrega ####
 
-se realizarán compilaciones y construcciones de sistemas sobre la rama de lanzamiento (Master o de integración), teniendo en cuenta el cliente del cual se trata (la rama puede variar dependiendo el cliente). A medida que se van realizando los distintos tests con un desarrollo incremental iterativo, se irán corrigiendo los diferentes defectos y errores que van surgiendo. Cabe destacar que se deberán identificar correctamente las construcciones de los sistemas para cada ciclo. El producto, una vez que pasa todas las pruebas a las cuales se lo somete y que estarán efectuadas de acuerdo al Documento de Requerimientos, será otorgado al cliente.
+-	Se documentan las fallas corregidas,
+-	nombre de entrega,
+-	especificación del entorno para el cual se ha construido la entrega, 
+-	documentación, 
+-	archivos de configuración, 
+-	informe de pruebas.
+
+#### 8.5 Transferencia de release e instalación ####
+
+Se transfiere al usuario la nueva release, de la forma pactada con anterioridad.
+Por último se realiza la instalación de la nueva entrega.
+a continuación tendremos a disposición la carpeta ejecutables, con cada version del sistema, y su respectivo manual de instalación
+![Ejecutables](https://github.com/kleinermatias/BITSoftware/tree/master/Doc/Ejecutables)
+![Manual de instalación](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Manual.md)
 
 ### 9. Backup ###
 El código fuente del proyecto se encontrara alojado en los servidores de GitHub pero
