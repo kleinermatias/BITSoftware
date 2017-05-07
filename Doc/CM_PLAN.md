@@ -267,7 +267,7 @@ Se transfiere al usuario la nueva release, de la forma pactada con anterioridad.
 Por último se realiza la instalación de la nueva entrega.
 a continuación tendremos a disposición la carpeta ejecutables, con cada version del sistema, y su respectivo manual de instalación
 ![Ejecutables](https://github.com/kleinermatias/BITSoftware/tree/master/Doc/Ejecutables)
-![Manual de instalación](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Manual.md)
+![Manual de instalación](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Manual_instalacion.md)
 
 ### 9. Backup ###
 El código fuente del proyecto se encontrara alojado en los servidores de GitHub pero
