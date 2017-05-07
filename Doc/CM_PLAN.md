@@ -110,7 +110,7 @@ analizar el impacto y los costos de los cambios, y un aprobador, quien será el 
 - **Adeministrador de riesgos:** Identificará los posibles riesgos que se presentarán al aprobar los cambios solicitados.
 Y presentará los posibles costos que llevará a cabo el cambio.(*Kleiner Matias*)
 
-- **Administrador de desarrolladores:**Se encargará de todo lo relacionado al desarrollo de la aplicación aportando
+- **Administrador de desarrolladores:** Se encargará de todo lo relacionado al desarrollo de la aplicación aportando
 estimaciones más reales y los posibles productos que se afectaría si el cambio es aprobado.(*Cavanagh Juan*)
 
 - **Aprobador:** Se encargará de aprobar o no un cambio con
