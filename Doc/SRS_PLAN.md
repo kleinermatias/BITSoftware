@@ -20,6 +20,7 @@ Sera una aplicacion en java que ofrece, entre otras cosas, la eleccion de destin
  
  - SRS: Especificacion de requerimientos del sistema.
  - CU: Casos de uso.
+ - CP: Casos de prueba.
  - UML: Lenguaje unificado de modelado. 
  - Rx: Requerimiento numero x.
  
@@ -106,7 +107,7 @@ Facilidad de uso:
 - El sistema debe poseer interfaz grafica bien formada e intuitiva.
 
 ### 6. Casos de prueba del sistema ###
-#### Requerimiento 1 ####
+
 CP 1: 
 - El cliente solicita un pasaje para un destino X, el operario de la aplicacion BITicket ingresa por teclado el destino deseado por el cliente.
 - Resultado esperado: El sistema muestra en pantalla si el destino seleccionado se encuentra disponible en la base de datos.
