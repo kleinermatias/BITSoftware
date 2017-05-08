@@ -77,30 +77,36 @@ Breve descripcion de los casos de uso
 A continuacion, se muestra un diagrama de secuencia de uso de la aplicacion
 ![Diagrama de secuencia](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/Sequence%20Diagram1.jpg)
 
-#### 4.1 Servicios provistos al cliente ####
-La aplicacion deberá ser capaz de ofrecer al interesado en adquirir un boleto de viaje en colectivo de la empresa XXXXX la posibilidad de eleccion de la fecha de su viaje, el origen y destino del mismo, el horario conveniente, el/los numero/s de asiento/s, la forma de pago y la verificacion del mismo.
+### 5. Requerimientos no funcionales ###
 
-#### 4.2 Estandares a seguir ####
-COMPLETAR ESTANDARES A SEGUIR
+Performance:
+•  El sistema debera ser capaz de consultar el itinerario en menos de 3 segundos.
+•  El sistema debera cambiar de ventanas en un tiempo menor a 1 segundo.
+•  El tiempo para iniciar o reiniciar el sistema debera ser inferior a 1 minuto.
+•  La aplicacion no podra superar el peso de 100 megas.
 
-### 5. Arquitectura del sistema ###
-El proyecto será guardado bajo el directorio <BITSoftware> (repositorio de github).
- 
-### 6. Modelos del sistema ###
+Confiabilidad:
+•  El sistema debe estar disponible un 95% de las veces que el usuario lo intente usar.
+•  La tasa de tiempo de fallas del sistema no podra ser mayor a 0,5% de tiempo de operacion total.
 
-### 7. Evolucion del sistema ###
+Portabilidad:
+•  El sistema sólo debe ser portable a otros dispositivos que corran el mismo sistema operativo.
+
+Facilidad de uso: 
+•  El sistema no debe requerir entrenamiento especial para ser operado por un usuario promedio.
+•  El sistema debe requerir entrenamiento de no más de una sesión de 10 minutos para ser operado por un usuario con bajo nivel de manejo de aplicaciones.
+•  El sistema debe poseer una sola ventana de ayuda, más un link a un manual de usuario on-line.
+•  El sistema debe poseer interfaz grafica bien formada e intuitiva.
+
+### 6. Evolucion del sistema ###
 - Este software puede contar con actualizaciones referidas a la optimizacion del funcionamiento de la aplicacion BITicket y la implementacion de nuevas funcionalidades en la Interfaz del usuario.
 - Ademas se podrán realizar cambios en el software segun lo establecido en el [Plan de Configuraciones](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/CM_PLAN.md) en la seccion 3: Administracion de cambios.
 
-### 8. Apendices ###
-En que nos basamos para hacer el documento, etc.
+### 7. Apendices ###
 
-### 9. Indice ###
+#### Bibliografia ####
+- Ingeniería del software. Séptima edición. IAN SOMMERVILLE.
+- Pagina web de la catedra [Sitio web de la catedra](https://sites.google.com/view/ingenieria-software-unc)
 
-
-
-
-
-![Clases de dominio](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/Clases.png)
-##### Nota #####
-Un modelo de Dominio se representa con un conjunto de diagramas de clases en los que no se define ninguna operación. Por lo tanto, se considera al Modelo de Dominio como un Diccionario visual de las abstracciones relevantes, vocabulario de dominio e información del dominio. 
+### 8. Indice ###
+ 
