@@ -4,12 +4,13 @@
 El documento se dirige a desarrolladores, clientes y cualquier otra persona interesada en el proyecto. El mismo abarca aspectos del sistema como proposito, contexto, requerimientos de usuario y de sistema, arquitectura del sistema, modelo del mismo, especificacion de los requerimientos, etc. El mismo servira como contrato entre el cliente y los desarrolladores y es base del desarrollo de todo el proyecto.
 
 - Control de Versiones
-	- **Version 0.1.0** -  Autor/es: Cavanagh Juan, Casabella Martin, Kleiner Matias - Fecha: 07/05/2017 - Descripcion: primera version del documento SRS.
-	- **Version 0.1.1** -  Autor/es: Cavanagh Juan, Casabella Martin, Kleiner Matias - Fecha: 07/05/2017 - Descripcion: se agregaron diagramas de casos de uso y requerimientos no funcionales.
+	- **Version 0.1.0** -  Autor/es: Cavanagh Juan, Casabella Martin, Kleiner Matias - Fecha: 07/05/2017 - Descripción: primera version del documento SRS.
+	- **Version 0.1.1** -  Autor/es: Cavanagh Juan, Casabella Martin, Kleiner Matias - Fecha: 07/05/2017 - Descripción: se agregaron diagramas de casos de uso y requerimientos no funcionales.
+	- **Version 0.2.0** -  Autor/es: Cavanagh Juan, Casabella Martin, Kleiner Matias - Fecha: 08/05/2017 - Descripción: se agregaron diagramas de casos de prueba, matrices de trazabilidad.
 ### 1. Introducción  ### 
 
 #### 1.1 Propósito  ####
-El propósito de este documento es describir las funciones y los requerimientos del proyecto. El mismo surge de la necesidad del cliente de poder realizar las ventas de viajes en colectivos de su empresa.
+El propósito de este documento es describir las funciones y los requerimientos del proyecto. El mismo surge de la necesidad del cliente de poder realizar las ventas de viajes en colectivos de (NOMBRE DE LA EMPRESA).
 
 #### 1.2 Alcance ####
 Sera una aplicacion en java que ofrece, entre otras cosas, la eleccion de destino, colectivo, cantidad de pasajes, numeros de asientos, horario de viaje, formas de pago, etc. Para el proposito la aplicacion requerira de conexion a internet. 
@@ -17,7 +18,10 @@ Sera una aplicacion en java que ofrece, entre otras cosas, la eleccion de destin
 ### 2. Glosario  ###
  A continuacion se definen los terminos que son usado a lo largo de todo el documento.
  
- SRS: Especificacion de requerimientos del sistema.
+ - SRS: Especificacion de requerimientos del sistema.
+ - CU: Casos de uso.
+ - UML: Lenguaje unificado de modelado. 
+ - Rx: Requerimiento numero x.
  
 ### 3. Descripcion general ###
 
@@ -101,12 +105,63 @@ Facilidad de uso:
 - El sistema debe poseer una sola ventana de ayuda, más un link a un manual de usuario on-line.
 - El sistema debe poseer interfaz grafica bien formada e intuitiva.
 
-### 6. Evolucion del sistema ###
+### 6. Casos de prueba del sistema ###
+#### Requerimiento 1 ####
+CP 1: 
+- El cliente solicita un pasaje para un destino X, el operario de la aplicacion BITicket ingresa por teclado el destino deseado por el cliente.
+- Resultado esperado: El sistema muestra en pantalla si el destino seleccionado se encuentra disponible en la base de datos.
+
+CP2:
+- El cliente solicita un pasaje para una fecha y hora X, el operario de la aplicacion BITicket ingresa la eleccion al sistema.
+- Resultado esperado: El sistema muestra en pantalla las fechas de viaje y horarios disponibles para eleccion del cliente.
+
+CP3:
+- El operario consulta que tipo de micros hay disponibles para un destino X con fecha y hora de viaje X.
+- Resultado esperado: El sistema muestra en pantalla los distintos tipos micros disponibles para eleccion del cliente.
+
+CP4:
+- Solicitar al servidor los distintos asientos disponibles del micro.
+- Resultado esperado: El sistema muestra en pantalla los distintos asientos disponibles para eleccion del cliente.
+
+CP5:
+- El operario presiona el boton "formas de pago".
+- Resultado esperado: El sistema muestra en pantalla las diferentes formas de pago disponibles para eleccion del cliente.
+
+CP6:
+- Se ingresan los datos del comprador y se presiona en siguiente.
+- Resultado esperado: El sistema registra exitosamente los datos del cliente.
+
+CP7:
+- Se verifican los datos del cliente ingresados por el personal operario.
+- Resultado esperado: Validacion de datos del cliente.
+
+CP8:
+- Se cargan los datos de cliente, una vez validados y verificados se hace click en imprimir boleto de viaje.
+- Resultado esperado: La aplicacion imprime el boleto de viaje de manera exitosa.
+
+CP10:
+- Se cargan los datos de cliente, una vez validados y verificados se hace click en imprimir comprobante de pago.
+- Resultado esperado: La aplicacion imprime el comprobante de pago de manera exitosa.
+
+### 7. Pruebas de aceptacion por el cliente ###
+Todos los casos de pruebas tendran que pasar exitosamente para la aceptacion del cliente.
+
+### 8. Matriz de trazabilidad ###
+
+#### 8.1 Matriz de trazabilidad en funcion de los casos de uso ####
+
+![Matriz de trazabilidad en función de los CU](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/MATRIZcasoUSO.png)
+
+#### 8.2 Matriz de trazabilidad en funcion de los casos de prueba ####
+
+![Matriz de trazabilidad en función de los CP](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/matrizCASOprueba.png)
+
+### 9. Evolucion del sistema ###
 - Este software puede contar con actualizaciones referidas a la optimizacion del funcionamiento de la aplicacion BITicket y la implementacion de nuevas funcionalidades en la Interfaz del usuario.
 - Ademas se podrán realizar cambios en el software segun lo establecido en el [Plan de Configuraciones](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/CM_PLAN.md) en la seccion 3: Administracion de cambios.
 
-### 7. Apendices ###
+### 10. Apendices ###
 
 #### Bibliografia ####
-- Ingeniería del software. Séptima edición. IAN SOMMERVILLE.
+- Ingeniería del software. Novena edición. IAN SOMMERVILLE.
 - Pagina web de la catedra [Sitio web de la catedra](https://sites.google.com/view/ingenieria-software-unc)
