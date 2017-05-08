@@ -4,8 +4,8 @@
 El documento se dirige a desarrolladores, clientes y cualquier otra persona interesada en el proyecto. El mismo abarca aspectos del sistema como proposito, contexto, requerimientos de usuario y de sistema, arquitectura del sistema, modelo del mismo, especificacion de los requerimientos, etc. El mismo servira como contrato entre el cliente y los desarrolladores y es base del desarrollo de todo el proyecto.
 
 - Control de Versiones
-	- **Version 0.1** -  Autor/es: Cavanagh Juan, Casabella Martin, Kleiner Matias - Fecha: 07/05/2017 - Descripcion: primera version del documento SRS.
-
+	- **Version 0.1.0** -  Autor/es: Cavanagh Juan, Casabella Martin, Kleiner Matias - Fecha: 07/05/2017 - Descripcion: primera version del documento SRS.
+	- **Version 0.1.1** -  Autor/es: Cavanagh Juan, Casabella Martin, Kleiner Matias - Fecha: 07/05/2017 - Descripcion: se agregaron diagramas de casos de uso y requerimientos no funcionales.
 ### 1. Introducción  ### 
 
 #### 1.1 Propósito  ####
@@ -28,10 +28,12 @@ Se espera que la aplicacion la use un solo grupo de usuarios que serian los vend
 El software correra en compuratodas con sistemas operativos Windows, Linux o Mac que soporte la maquina virtual de JAVA.
 
 #### 3.3 Restricciones de diseño e implementación ####
-##### Limitaciones software: #####
-El sistema necesitara la version JAVA 6 o superior.
-Eclipse JAVA sera el IDE usado para la programacion.
-##### Limitaciones Hardware: #####
+
+#### Limitaciones software: ####
+- El sistema necesitara la version JAVA 6 o superior.
+- Eclipse JAVA sera el IDE usado para la programacion.
+
+#### Limitaciones Hardware: ####
 El sistema necesitara de una computadora con sistemas operativos Windows, Linux o Mac que soporte la maquina virtual de JAVA.
 Ademas, tendra que tener conexion a internet e impresora para emitir comprobantes de pago y boleto.
 
@@ -74,7 +76,8 @@ Breve descripcion de los casos de uso
 ![CU6](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU6.png)
 ![CU7](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU7.png)
 
-A continuacion, se muestra un diagrama de secuencia de uso de la aplicacion
+A continuacion, se muestra un diagrama de secuencia de uso tipico de la aplicacion:
+
 ![Diagrama de secuencia](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/Sequence%20Diagram1.jpg)
 
 ### 5. Requerimientos no funcionales ###
@@ -107,6 +110,3 @@ Facilidad de uso:
 #### Bibliografia ####
 - Ingeniería del software. Séptima edición. IAN SOMMERVILLE.
 - Pagina web de la catedra [Sitio web de la catedra](https://sites.google.com/view/ingenieria-software-unc)
-
-### 8. Indice ###
- 
