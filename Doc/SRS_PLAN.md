@@ -80,23 +80,23 @@ A continuacion, se muestra un diagrama de secuencia de uso de la aplicacion
 ### 5. Requerimientos no funcionales ###
 
 Performance:
-•  El sistema debera ser capaz de consultar el itinerario en menos de 3 segundos.
-•  El sistema debera cambiar de ventanas en un tiempo menor a 1 segundo.
-•  El tiempo para iniciar o reiniciar el sistema debera ser inferior a 1 minuto.
-•  La aplicacion no podra superar el peso de 100 megas.
+- El sistema debera ser capaz de consultar el itinerario en menos de 3 segundos.
+- El sistema debera cambiar de ventanas en un tiempo menor a 1 segundo.
+- El tiempo para iniciar o reiniciar el sistema debera ser inferior a 1 minuto.
+- La aplicacion no podra superar el peso de 100 megas.
 
 Confiabilidad:
-•  El sistema debe estar disponible un 95% de las veces que el usuario lo intente usar.
-•  La tasa de tiempo de fallas del sistema no podra ser mayor a 0,5% de tiempo de operacion total.
+- El sistema debe estar disponible un 95% de las veces que el usuario lo intente usar.
+- La tasa de tiempo de fallas del sistema no podra ser mayor a 0,5% de tiempo de operacion total.
 
 Portabilidad:
-•  El sistema sólo debe ser portable a otros dispositivos que corran el mismo sistema operativo.
+- El sistema sólo debe ser portable a otros dispositivos que corran el mismo sistema operativo.
 
 Facilidad de uso: 
-•  El sistema no debe requerir entrenamiento especial para ser operado por un usuario promedio.
-•  El sistema debe requerir entrenamiento de no más de una sesión de 10 minutos para ser operado por un usuario con bajo nivel de manejo de aplicaciones.
-•  El sistema debe poseer una sola ventana de ayuda, más un link a un manual de usuario on-line.
-•  El sistema debe poseer interfaz grafica bien formada e intuitiva.
+- El sistema no debe requerir entrenamiento especial para ser operado por un usuario promedio.
+- El sistema debe requerir entrenamiento de no más de una sesión de 10 minutos para ser operado por un usuario con bajo nivel de manejo de aplicaciones.
+- El sistema debe poseer una sola ventana de ayuda, más un link a un manual de usuario on-line.
+- El sistema debe poseer interfaz grafica bien formada e intuitiva.
 
 ### 6. Evolucion del sistema ###
 - Este software puede contar con actualizaciones referidas a la optimizacion del funcionamiento de la aplicacion BITicket y la implementacion de nuevas funcionalidades en la Interfaz del usuario.
