@@ -46,7 +46,7 @@ Ademas, tendra que tener conexion a internet e impresora para emitir comprobante
 ### 4. Requerimientos de usuario ###
 Se detalla a continuacion de manera informativa las funciones de la aplicacion de forma general.
 
-![Requisitos](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/requisitos.png)
+![Requisitos](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/requisitos.PNG)
 
 Lista de requisitos.
 
@@ -75,21 +75,21 @@ R10. La aplicacion debera ser capaz de gestionar los horarios (modificar y/o set
 R11. La aplicacion debera ser capaz de gestionar el precio de la funcion (modificar y/o setear precios para la funcion).
 
 #### Modelo de casos de uso ####
-![Casos de uso](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CasosUso.png)
+![Casos de uso](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CasosUso.PNG)
 
 Breve descripcion de los casos de uso
 
-![CU1](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU1.png)
-![CU2](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU2.png)
-![CU3](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU3.png)
-![CU4](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU4.png)
-![CU5](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU5.png)
-![CU6](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU6.png)
-![CU7](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU7.png)
-![CU8](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU8.png)
-![CU9](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU9.png)
-![CU10](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU10.png)
-![CU11](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU11.png)
+![CU1](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU1.PNG)
+![CU2](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU2.PNG)
+![CU3](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU3.PNG)
+![CU4](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU4.PNG)
+![CU5](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU5.PNG)
+![CU6](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU6.PNG)
+![CU7](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU7.PNG)
+![CU8](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU8.PNG)
+![CU9](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU9.PNG)
+![CU10](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU10.PNG)
+![CU11](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Diagramas/CU11.PNG)
 
 A continuacion, se muestra un diagrama de secuencia de uso tipico de la aplicacion para el usuario Cliente:
 
@@ -170,11 +170,11 @@ Todos los casos de pruebas tendran que pasar exitosamente para la aceptacion del
 
 #### 8.1 Matriz de trazabilidad en funcion de los casos de uso ####
 
-![Matriz de trazabilidad en función de los CU](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/MATRIZcasoUSO.png)
+![Matriz de trazabilidad en función de los CU](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/MATRIZcasoUSO.PNG)
 
 #### 8.2 Matriz de trazabilidad en funcion de los casos de prueba ####
 
-![Matriz de trazabilidad en función de los CP](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/MATRIZcasoPRUEBA.png)
+![Matriz de trazabilidad en función de los CP](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/MATRIZcasoPRUEBA.PNG)
 
 ### 9. Evolucion del sistema ###
 - Este software puede contar con actualizaciones referidas a la optimizacion del funcionamiento de la aplicacion BITicket y la implementacion de nuevas funcionalidades en la Interfaz del usuario.
