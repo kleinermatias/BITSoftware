@@ -185,3 +185,19 @@ Todos los casos de pruebas tendran que pasar exitosamente para la aceptacion del
 #### Bibliografia ####
 - Ingeniería del software. Novena edición. IAN SOMMERVILLE.
 - Pagina web de la catedra [Sitio web de la catedra](https://sites.google.com/view/ingenieria-software-unc)
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[TP2]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
+### Diseño de la aplicacion ###
+
+#### 1. Bocetos ####
+
+Se confeccionaron los siguientes bocetos de la aplicacion, siguiendo los requerimientos propuestos por el cliente. 
+- Nota: La aplicacion final no necesariamente tendra este diseño, tanto los requerimientos como el diseño de la misma podran sufrir modificaciones a lo largo del proyecto.
+
+![Boceto1](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/BocetoPrincipal.PNG)
+![Boceto1](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/BocetoSegunda.PNG)
+![Boceto1](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/BocetoTercera.PNG)
+![Boceto1](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/BocetoCuarta.PNG)
+![Boceto1](https://github.com/kleinermatias/BITSoftware/blob/master/Doc/Imagenes/BocetoQuinta.PNG)
