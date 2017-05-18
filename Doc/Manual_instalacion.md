@@ -1,7 +1,7 @@
 # Manual de la aplicación BITiket #
 
 ### 1 INTRODUCCIÓN ###
-Este manual proporciona los detalles y requerimientos para el uso de la aplicación conocida como Bitiket. La aplicación fue diseñada para la venta de pasajes, de manera facil y eficiente.
+Este manual proporciona los detalles y requerimientos para el uso de la aplicación conocida como BITicket. La aplicación fue diseñada para la venta de reservas de funciones de cine, de manera facil y eficiente.
 El documento proporciona los detalles y requerimientos para el uso correcto de la aplicación, esto con la finalidad de brindar al usuario una herramienta que asegure el uso correcto de la aplicación.
 
 ### 2 REQUERIMIENTOS ###
