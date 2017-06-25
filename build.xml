@@ -3,7 +3,7 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="BITicket">
+              as the first entry and export the buildfile again. --><project name="kleinermatias/BITSoftware" default="build">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../eclipse/java-neon/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
