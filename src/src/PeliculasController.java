@@ -179,7 +179,7 @@ public class PeliculasController {
 			if (ticket.getCurrentMovie() == null)
 				setChoosedMovie();
 			else if (!ui.getMovieJList().getSelectedValue().equals(ticket.getCurrentMovie().getTitle())) {
-				int i = JOptionPane.showConfirmDialog(null, "¿Quiere cambiar de pelicula?", "",
+				int i = JOptionPane.showConfirmDialog(null, "Quiere cambiar de pelicula?", "",
 						JOptionPane.YES_NO_OPTION);
 				if (i == 0)
 					setChoosedMovie();
