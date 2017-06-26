@@ -13,6 +13,14 @@
                 <javac srcdir="${src.dir}" destdir="${build.dir}" 
             classpathref="build-classpath"
  />
+                
+                <path id="build-classpath">
+  <fileset dir="${libs.dir}">
+    <include name="*.jar"/>
+  </fileset>
+  <pathelement path= "${build.dir}"/>
+</path>
+                
     <path id="BITicket.classpath">
         <pathelement location="bin"/>
         <pathelement location="lib/junit-4.12.jar"/>
@@ -37,6 +45,8 @@
     <target name="clean">
         <delete dir="bin"/>
     </target>
+                
+                
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
     <target name="build-subprojects"/>
