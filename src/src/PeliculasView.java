@@ -90,7 +90,7 @@ public class PeliculasView extends JFrame {
 
 		setCurrentTime();
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-		setTitle("BITicket");
+		setTitle("BITicket v1.0");
 		setBackground(new java.awt.Color(250, 102, 0));
 		setBounds(new java.awt.Rectangle(2, 2, 900, 800));
 		setMinimumSize(new java.awt.Dimension(50, 50));

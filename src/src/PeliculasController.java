@@ -174,7 +174,7 @@ public class PeliculasController {
 
 	private void chooseMovieButtonActionPerformed(ActionEvent evt) {
 		if (ui.getMovieJList().getSelectedValue() == null)
-			JOptionPane.showMessageDialog(ui, "Please select movie");
+			JOptionPane.showMessageDialog(ui, "Seleccione una pelicula");
 		else {
 			if (ticket.getCurrentMovie() == null)
 				setChoosedMovie();
