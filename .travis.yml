@@ -2,7 +2,7 @@ language: java
 jdk:
  - oraclejdk8
  before_script:
-  - wget https://github.com/kleinermatias/BITSoftware/blob/master/javacsv.jar
-  - export PATH=$PATH:$PWD/javacsv.jar/bin/
+ - mkdir lib/
+ - wget -P "lib/" https://github.com/kleinermatias/BITSoftware/blob/master/javacsv.jar
 after_success:
   - bash <(curl -s https://codecov.io/bash)
