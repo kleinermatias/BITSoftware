@@ -15,7 +15,7 @@ import src.Ticket;
 
 
 public class PeliculasModelTest {
-	private PeliculasModel modelo=new PeliculasModel();
+	private PeliculasModel modelo=PeliculasModel.getInstance();
 	String[] des = {"element1-ok","element2-99","element3-5,5","dsfsdf","adsdd","asas"};
 
 	
