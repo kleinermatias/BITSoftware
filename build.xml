@@ -1,159 +1,56 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="BITicket">
-    <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="../../../eclipse/java-neon/eclipse/"/>
-    <property name="junit.output.dir" value="junit"/>
-    <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.8"/>
-    <property name="source" value="1.8"/>
-                <javac srcdir="${src.dir}" destdir="${build.dir}" 
-            classpathref="build-classpath"
- />
-                
-                <path id="build-classpath">
-  <fileset dir="${libs.dir}">
-    <include name="*.jar"/>
-  </fileset>
-  <pathelement path= "${build.dir}"/>
-</path>
-                
-    <path id="BITicket.classpath">
-        <pathelement location="bin"/>
-        <pathelement location="lib/junit-4.12.jar"/>
-        <pathelement location="lib/hamcrest-core-1.3.jar"/>
-        <pathelement location="lib/javacsv.jar"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="vml" default="main" basedir=".">
+    <!-- Sets variables which can later be used. -->
+    <!-- The value of a property is accessed via ${} -->
+    <property name="src.dir" location="src" />
+    <property name="build.dir" location="bin" />
+    <property name="libs.dir" location="libs" />
+    <property name="dist.dir" location="build/jar" />
+    <property name="docs.dir" location="build/docs" />
+    <path id="build-classpath">
+        <fileset dir="${libs.dir}">
+            <include name="*.jar" />
+        </fileset>
     </path>
-    <target name="init">
-        <mkdir dir="bin"/>
-        <copy includeemptydirs="false" todir="bin">
-            <fileset dir="src">
-                <exclude name="**/*.launch"/>
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
-        <copy includeemptydirs="false" todir="bin">
-            <fileset dir="test">
-                <exclude name="**/*.launch"/>
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
-    </target>
+    <!-- Deletes the existing build, docs and dist directory-->
     <target name="clean">
-        <delete dir="bin"/>
+        <delete dir="${build.dir}" />
+        <delete dir="${docs.dir}" />
+        <delete dir="${dist.dir}" />
     </target>
-                
-                
-    <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
-    <target name="build-subprojects"/>
-    <target depends="init" name="build-project">
-        <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
-            <src path="src"/>
-            <src path="test"/>
-            <classpath refid="BITicket.classpath"/>
+    <!-- Creates the  build, docs and dist directory-->
+    <target name="makedir">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${docs.dir}" />
+        <mkdir dir="${dist.dir}" />
+    </target>
+    <!-- Compiles the java code (including the usage of library for JUnit -->
+    <target name="compile" depends="clean, makedir">
+        <javac srcdir="${src.dir}" destdir="${build.dir}">
+            <classpath refid="build-classpath" />
         </javac>
     </target>
-    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-        <copy todir="${ant.library.dir}">
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </copy>
-        <unzip dest="${ant.library.dir}">
-            <patternset includes="jdtCompilerAdapter.jar"/>
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </unzip>
-    </target>
-    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-        <antcall target="build"/>
-    </target>
-    <target name="AsientosTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.AsientosTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="BITicket.classpath"/>
-        </junit>
-    </target>
-    <target name="Main (11)">
-        <java classname="src.Main" failonerror="true" fork="yes">
-            <classpath refid="BITicket.classpath"/>
-        </java>
-    </target>
-    <target name="Main (13)">
-        <java classname="src.Main" failonerror="true" fork="yes">
-            <classpath refid="BITicket.classpath"/>
-        </java>
-    </target>
-    <target name="PeliculasModelTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.PeliculasModelTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="BITicket.classpath"/>
-        </junit>
-    </target>
-    <target name="PeliculasTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.PeliculasTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="BITicket.classpath"/>
-        </junit>
-    </target>
-    <target name="PruebaIntegracion1">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.PruebaIntegracion1" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="BITicket.classpath"/>
-        </junit>
-    </target>
-    <target name="SalasTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.SalasTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="BITicket.classpath"/>
-        </junit>
-    </target>
-    <target name="Test">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.AsientosTest" todir="${junit.output.dir}"/>
-            <test name="test.PeliculasModelTest" todir="${junit.output.dir}"/>
-            <test name="test.PeliculasTest" todir="${junit.output.dir}"/>
-            <test name="test.SalasTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="BITicket.classpath"/>
-        </junit>
-    </target>
-    <target name="TicketTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.TicketTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="BITicket.classpath"/>
-        </junit>
-    </target>
-    <target name="junitreport">
-        <junitreport todir="${junit.output.dir}">
-            <fileset dir="${junit.output.dir}">
-                <include name="TEST-*.xml"/>
+    <!-- Creates Javadoc -->
+    <target name="docs" depends="compile">
+        <javadoc packagenames="src" sourcepath="${src.dir}" destdir="${docs.dir}">
+            <!-- Define which files / directory should get included, we include all -->
+            <classpath refid="build-classpath" />
+            <fileset dir="${src.dir}">
+                <include name="**" />
             </fileset>
-            <report format="frames" todir="${junit.output.dir}"/>
-        </junitreport>
+        </javadoc>
+    </target>
+    <!--Creates the deployable jar file  -->
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.dir}\test.jar" basedir="${build.dir}">
+            <zipgroupfileset dir="${libs.dir}" includes="**/*.jar" />
+            <manifest>
+                <attribute name="Main-Class" value="vml.coding.test.Test" />
+                <attribute name="Build-Path" value="${build-classpath}" />
+            </manifest>
+        </jar>
+    </target>
+    <target name="main" depends="compile, jar, docs">
+        <description>Main target</description>
     </target>
 </project>
