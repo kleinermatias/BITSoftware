@@ -6,3 +6,9 @@ jdk:
  - wget -P "lib/" https://github.com/kleinermatias/BITSoftware/blob/master/javacsv.jar
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+addons:
+  apt:
+    sources:
+    - lib
+    packages:
+    - javacsv
