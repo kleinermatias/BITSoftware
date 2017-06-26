@@ -8,3 +8,7 @@
 	<classpathentry kind="lib" path="lib/javacsv.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
+
+<path id="classpath">
+    <fileset dir="${lib.dir}" includes="**/*.jar"/>
+</path>
