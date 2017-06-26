@@ -26,8 +26,8 @@ public class PeliculasModelTest {
 	
 	@Test
 	public void testReadData() {
-		assertEquals(modelo.getAllTheaters().get("Sala A").getLevel(),"normal");
-		assertFalse(modelo.getAllTheaters().get("Sala A").getLevel()=="Cualquier otra cosa");
+		assertEquals(modelo.getAllTheaters().get("Sala A").getLevel(),"normal");				// se quiere probar el tipo de cine disponible, supera el test si se instancia un cine tipo normal.
+		assertFalse(modelo.getAllTheaters().get("Sala A").getLevel()=="Cualquier otra cosa");	// solo pasa si recibe un tipo normal. 
 	}
 
 
